@@ -5,7 +5,7 @@
 ## 基准测试
 
 由于可供选择的工具数量众多，我们预计进一步的定期基准测试将变得更加重要。 [Open Problems in Single-Cell Analysis](https://openproblems.bio/) 等旨在使用应用于标准数据集的明确定义的指标来对工具进行基准测试的努力将变得至关重要。
-However, for 基准测试ing to be successful, the 单细胞 community has to agree on a set of metrics per task.
+然而，要使基准测试取得成功，单细胞社区必须就每个任务的一套指标达成一致。
 因此，我们期望关于定义“好”或“坏”分析步骤的讨论变得越来越重要。
 一旦出现新的基准测试结果和工具建议，我们将更新我们的章节。
 
