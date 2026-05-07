@@ -1,0 +1,5 @@
+1
+我们使用 R 准备了 RNA 和 ATAC 对象，用于 FigR 和 CisTopic 进行处理。
+
+2
+我们使用 FigR 计算 DORC 分数，并将其可视化为散点图、热图和网络。

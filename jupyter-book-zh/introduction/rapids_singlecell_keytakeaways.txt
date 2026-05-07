@@ -1,0 +1,11 @@
+1
+Rapids-singlecell 镜像 GPU 上的 scanpy API，因此可以通过将`sc`交换为`rsc`并将 AnnData 移动到`rsc.get.anndata_to_GPU`来移植大多数预处理和聚类管道。
+
+2
+准确选择一种分配器策略：如果数据适合 VRAM，则选择池分配器；如果不适合，则选择托管（统一）内存。混合两个片段内存并削弱加速。
+
+3
+一旦某个步骤不再需要 GPU，则使用`rsc.get.anndata_to_CPU`将数据移回主机内存，释放中间 CuPy 数组，并调用`cp.get_default_memory_pool().free_all_blocks()`释放不再使用的 VRAM。
+
+4
+对于超过单个 GPU 内存的数据集，请将`dask-cuda`与`read_elem_lazy`AnnData 读取器结合起来，通过 GPU 传输块；期望偶尔的同步点（QC、HVG 选择、缩放、PCA）强制进行评估。

@@ -4,6 +4,7 @@ notebooks/joblib/
 
 # jupyter-book
 jupyter-book/_build
+jupyter-book-zh/_build
 
 # Docker container
 container

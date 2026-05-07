@@ -1,0 +1,7 @@
+name: perturbation_modeling
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - conda-forge::python=3.13.11
+  - conda-forge::pertpy=1.0.4

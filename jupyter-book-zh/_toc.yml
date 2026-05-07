@@ -1,0 +1,88 @@
+format: jb-book
+root: preamble
+defaults:
+  numbered: true
+parts:
+- caption: 引言
+  chapters:
+  - file: introduction/prior_art
+  - file: introduction/scrna_seq
+  - file: introduction/raw_data_processing
+  - file: introduction/fundamental_data_structures_and_frameworks
+  - file: introduction/advanced_data_structures_and_frameworks
+  - file: introduction/interoperability
+  - file: introduction/rapids_singlecell
+- caption: 预处理与可视化
+  chapters:
+  - file: preprocessing_visualization/quality_control
+  - file: preprocessing_visualization/normalization
+  - file: preprocessing_visualization/feature_selection
+  - file: preprocessing_visualization/dimensionality_reduction
+- caption: 识别细胞结构
+  chapters:
+  - file: cellular_structure/clustering
+  - file: cellular_structure/annotation
+  - file: cellular_structure/integration
+- caption: 推断轨迹
+  chapters:
+  - file: trajectories/pseudotemporal
+  - file: trajectories/rna_velocity
+  - file: trajectories/lineage_tracing
+- caption: 处理不同条件
+  chapters:
+  - file: conditions/differential_gene_expression
+  - file: conditions/compositional
+  - file: conditions/gsea_pathway
+  - file: conditions/perturbation_modeling
+- caption: 机制建模
+  chapters:
+  - file: mechanisms/gene_regulatory_networks
+  - file: mechanisms/cell_cell_communication
+- caption: 去卷积
+  chapters:
+  - file: deconvolution/bulk_deconvolution
+- caption: 染色质可及性
+  chapters:
+  - file: chromatin_accessibility/introduction
+  - file: chromatin_accessibility/quality_control
+  - file: chromatin_accessibility/gene_regulatory_networks_atac
+- caption: 空间组学
+  chapters:
+  - file: spatial/introduction
+  - file: spatial/neighborhood
+  - file: spatial/domains
+  - file: spatial/spatially_variable_genes
+  - file: spatial/deconvolution
+  - file: spatial/imputation
+- caption: 表面蛋白
+  chapters:
+  - file: surface_protein/quality_control
+  - file: surface_protein/normalization
+  - file: surface_protein/doublet_detection
+  - file: surface_protein/dimensionality_reduction
+  - file: surface_protein/batch_correction
+  - file: surface_protein/annotation
+- caption: 适应性免疫受体库
+  chapters:
+  - file: air_repertoire/ir_profiling
+  - file: air_repertoire/clonotype
+  - file: air_repertoire/specificity
+  - file: air_repertoire/multimodal_integration
+- caption: 多模态整合
+  chapters:
+  - file: multimodal_integration/paired_integration
+  - file: multimodal_integration/advanced_integration
+- caption: 展望
+  chapters:
+  - file: outlook
+- caption: 致谢
+  chapters:
+  - file: acknowledgements
+- caption: 术语表
+  chapters:
+  - file: glossary
+- caption: 更新日志
+  numbered: false
+  chapters:
+  - file: CHANGELOG
+    title: 更新日志

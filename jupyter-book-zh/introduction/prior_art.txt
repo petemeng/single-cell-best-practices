@@ -1,0 +1,5 @@
+1
+Bioconductor OSCA 书籍提供了使用 R 的全面 scRNA-seq 分析工作流程，但仅限于 Bioconductor 工具，不包括其他单细胞组学或空间转录组学。
+
+2
+The Luecken 和 Theis 教程提供了 scRNA-seq 最佳实践，但示例已经过时，并且省略了 RNA 速度或空间转录组学等新技术。
